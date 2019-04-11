@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style>
+        .ct-label {
+    font-size: 15px;
+    color: white;
+}
+.ct-series-a .ct-line,
+        .ct-series-a .ct-point {
+            stroke: white;
+        }
+    </style>
+<link href="styles.css" rel="stylesheet"></head>
+
+<body>
+    <div class="search-panel">
+        <div class="welcome-text">
+            Welcome to our forecast app!
+        </div>
+
+        <div class="date"></div>
+
+        <input type="text" placeholder="Enter a city..." class="input-city" id="city-input">
+
+    </div>
+
+    <div class="city-inserted">
+
+    </div>
+
+    <div class="weather-cards">
+
+        <div class="day1 card">
+            <div class="day colori"></div>
+            <div class="temperature">
+                <span class="dayT"></span><span class="nightT"></span>
+            </div>
+            <div class="graphics colori"></div>
+            <div class="weather colori"></div>
+        </div>
+
+        <div class="day2 card">
+            <div class="day colori"></div>
+            <div class="temperature">
+                <span class="dayT"></span><span class="nightT"></span>
+            </div>
+            <div class="graphics colori">
+                
+            </div>
+            <div class="weather colori"></div>
+        </div>
+
+        <div class="day3 card">
+            <div class="day colori"></div>
+            <div class="temperature">
+                <span class="dayT"></span><span class="nightT"></span>
+            </div>
+            <div class="graphics colori"></div>
+            <div class="weather colori"></div>
+            
+        </div>
+
+        <div class="day4 card">
+            <div class="day colori"></div>
+            <div class="temperature">
+                <span class="dayT"></span><span class="nightT"></span>
+            </div>
+            <div class="graphics colori"></div>
+            <div class="weather colori"></div>
+        </div>
+
+        <div class="day5 card">
+            <div class="day colori"></div>
+            <div class="temperature">
+                <span class="dayT"></span><span class="nightT"></span>
+            </div>
+            <div class="graphics colori"></div>
+            <div class="weather colori"></div>
+        </div>
+
+    </div>
+
+    <div class="daily-info">
+
+        <div class="first box">
+            <div class="toggle-item">
+                <span class="day">DAY</span>
+                <label class="switch">
+                    <input type="checkbox" name="ts">
+                    <span class="slider round"></span>
+                </label>
+                <span class="night">NIGHT</span>
+            </div>
+            <div class="details"></div>
+        </div>
+
+        <div class="second box">
+            
+        </div>
+
+        <div class="third box">
+
+            <div class="sun">
+                
+            </div>
+
+            <div class="moon">
+                
+            </div>
+        </div>
+
+    </div>
+
+    <div class="charts-container">
+        <div class="describe">Temperature chart for upcoming 12 hours</div>
+        <div class="ct-chart1"></div>
+        <div class="describe">Rain probability chart for upcoming 5 days</div>
+        <div class="ct-chart2"> </div>
+    </div>
+
+    <div class="footer">Created by Szymon Awruk and Adam Kołtoniak</div>
+<script type="text/javascript" src="bundle.js"></script></body>
+
+</html>
